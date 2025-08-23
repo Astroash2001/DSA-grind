@@ -12,12 +12,12 @@ void CombinationSum(int index, int target, vector<int> &ds, vector<int> &arr,
   // making all the subsequences by picking and not picking
   // picking up
 
-  if (arr[index] <= target) {
+  if (arr[index] <= target) { // this condition here help us to pick same number at many times 
     ds.push_back(arr[index]);
     CombinationSum(index, target - arr[index], ds, arr, res);
     ds.pop_back();
   }
-  // not picking up
+  // not picking up 
   CombinationSum(index + 1, target, ds, arr, res);
 }
 

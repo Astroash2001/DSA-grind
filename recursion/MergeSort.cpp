@@ -11,7 +11,7 @@ void Merge(vector<int>& arr, int low, int mid, int high) {
     //here we are comparing the left sorted half 
     //with the right one and if the left element is smaller 
     // then we push the element in the result vector
-    if (arr[left] <= arr[right]) {
+    if (arr[left] <= arr[right]) { 
       res.push_back(arr[left]);
       left++;
     }
