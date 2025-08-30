@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-string arr = "wqhwejldf";
+string arr = "madam";
 int n = arr.size();
 bool CheckPalindromeByRecursion(int i) {
   if (i >= n / 2) {
